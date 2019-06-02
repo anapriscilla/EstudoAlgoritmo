@@ -22,6 +22,7 @@ public class MelhorAlunoTurma {
         int cont, valor = 0;
         int maior = 0;
         String aluno = null;
+        String melhoraluno = null;
 
         cont = 1;
 
@@ -42,12 +43,13 @@ public class MelhorAlunoTurma {
 
             if (n > maior) {
                 maior = n;
+                melhoraluno = aluno;
             }
 
             System.out.println("---------------------------------");
         }
 
-        System.out.println("O melhor aproveitamento foi de " + aluno + " com nota " + maior);
+        System.out.println("O melhor aproveitamento foi de " + melhoraluno + " com nota " + maior);
 
     }
 }
